@@ -3,8 +3,22 @@
     padding: 0px;
 }
 
+:root {
+    --main-color: #c2c2c2;
+}
+
+/* Promeniti */
+p, h1, h2, h3, h4, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header style start */
 header {
-    background-color: #c2c2c2;
+    background-color: var(--main-color);
     height: 120px;
 }
 
@@ -33,17 +47,73 @@ nav ul li a {
     font-size: 24px;
 }
 
+/* Header style end */
+
+/* Content start */
 #image-holder {
     width: 100%;
-    height: 1000px;
+    height: 850px;
     background-image: url("../img/cafe.jpg");
+    position: relative;
 }
 
+h1, h2 {
+    color: #00FFFF;
+    font-size: 34px;
+    text-align: center;
+    padding-top: 25px;
+}
 
+#title-text-holder, #welcome-text-holder {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+#welcome-text-holder {
+    position: absolute;
+    bottom: 0px;
+}
+
+#drinks-food-container {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.drinks-food-item {
+    width: 700px;
+    height: 400px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3, h4 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 28px;
+    color: #000;
+}
+
+.drinks-food-image-holder {
+    width: 550px;
+    height: 300px;
+    margin: 0px auto;
+}
+
+/* Content end */
+
+/* Footer style start*/
 footer .center-block {
     width: 100%;
     height: 200px;
-    background-color: #c2c2c2;
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -65,3 +135,6 @@ i {
     font-size: 32px;
     color: black;
 }
+
+/* Footer style end */
+
