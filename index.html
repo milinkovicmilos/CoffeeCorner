@@ -65,15 +65,59 @@
                 <h3>Posetite nas na našoj lokaciji !</h3>
                 <p>Bulevar Kralja Aleksandra 44 | Radno vreme: 08:00 - 00:00</p>
             </div>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1190.1273171104044!2d20.4696513849873!3d44.80901905171297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1677342262877!5m2!1ssr!2srs"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <div class="center-block">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.6464749533948!2d20.469055500000003!3d44.8083929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa422e4d6a1%3A0xccffbd830f9b8d80!2z0JHRg9C70LXQstCw0YAg0LrRgNCw0ZnQsCDQkNC70LXQutGB0LDQvdC00YDQsCA0NCwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1677610255262!5m2!1ssr!2srs"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
         <!-- Reservation start -->
         <div id="reservations">
-
+            <div id="res-text-holder" class="center-block">
+                <h3>Rezervišite sto u našem kafiću!</h3>
+                <h4>Brzo i jednostavno - odaberite slobodan sto i vreme i Vaš sto je rezervisan!</h4>
+            </div>
+            <div id="res-form-holder">
+                <form method="post">
+                    <div class="res-form-element-container">
+                        <div class="res-form-element">
+                            <label for="res-name">Ime</label><br/>
+                            <input type="text" id="res-name" name="res-name" />
+                        </div>
+                        <div class="res-form-element">
+                            <label for="res-last-name">Prezime</label><br/>
+                            <input type="text" id="res-last-name" name="res-last-name" />
+                        </div>
+                    </div>
+                    <div class="res-form-element-container">
+                        <div class="res-form-element">
+                            <label for="res-date-time">Vreme</label><br/>
+                            <input type="datetime-local" id="res-date-time" name="res-date-time" />
+                        </div>
+                        <div class="res-form-element">
+                            <label for="res-desks">Sto</label><br/>
+                            <select id="res-desks" name="res-desks">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="res-form-notes-holder">
+                        <label for="res-date-time">Napomena</label><br/>
+                        <textarea id="res-notes" name="res-notes"></textarea>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <!-- Footer start -->
