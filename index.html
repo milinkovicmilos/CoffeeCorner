@@ -36,7 +36,7 @@
                 <h1>Coffee Corner</h1>
             </div>
             <div id="welcome-text-holder">
-                <h2>Dobrodošli !</h2>
+                <h2>Dobro došli !</h2>
             </div>
         </div>
 
@@ -84,21 +84,21 @@
                     <div class="res-form-element-container">
                         <div class="res-form-element-up">
                             <label for="res-name">Ime</label><br/>
-                            <input type="text" id="res-name" name="res-name" />
+                            <input type="text" id="res-name" name="res-name" required="required" />
                         </div>
                         <div class="res-form-element-up">
                             <label for="res-last-name">Prezime</label><br/>
-                            <input type="text" id="res-last-name" name="res-last-name" />
+                            <input type="text" id="res-last-name" name="res-last-name" required="required" />
                         </div>
                         <div class="res-form-element-up">
                             <label for="res-last-name">Broj telefona</label><br/>
-                            <input type="text" id="res-last-name" name="res-last-name" />
+                            <input type="text" id="res-phone-number" name="res-phone-number" required="required" />
                         </div>
                     </div>
                     <div class="res-form-element-container">
                         <div class="res-form-element">
                             <label for="res-date-time">Vreme</label><br/>
-                            <input type="datetime-local" id="res-date-time" name="res-date-time" />
+                            <input type="datetime-local" id="res-date-time" name="res-date-time" required="required" />
                         </div>
                         <div class="res-form-element">
                             <label for="res-desks">Sto</label><br/>
@@ -121,6 +121,9 @@
                     <div id="res-form-notes-holder">
                         <label for="res-date-time">Napomena</label><br/>
                         <textarea id="res-notes" name="res-notes"></textarea>
+                    </div>
+                    <div id="res-form-submit-holder">
+                        <input type="submit" value="REZERVIŠI" />
                     </div>
                 </form>
             </div>
