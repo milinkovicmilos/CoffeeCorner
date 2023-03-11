@@ -93,11 +93,12 @@ nav ul li a:hover::after {
 
 /* Content start */
 
-hr {
+.line {
+    box-sizing: border-box;
     width: 50%;
-    height: 3px;
+    height: 0px;
     margin: 0px auto 30px auto;
-    background-color:rgba(0, 0, 0, 0.11)
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2)
 }
 
 #image-holder {
@@ -318,16 +319,28 @@ h1, h2 {
 }
 
 #res-form-submit-holder input {
-    width: 40%;
-    border: 2px solid var(--detail-color);
+    width: 35%;
+    border: 2px solid var(--secondary-color);
     border-radius: 8px;
     font-size: 18px;
-    background-color: var(--secondary-color);
-    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    cursor: pointer;
 }
 
 #res-form-submit-holder {
     text-align: center;
+}
+
+#to-top-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+
+#to-top-btn i {
+    color: rgba(0, 0, 0, 50%);
+    font-size: 60px;
 }
 
 /* Content end */
@@ -492,4 +505,43 @@ footer p {
 
 .price {
     text-align: right;
+}
+/* cenovnik style end */
+
+/* galerija style start */
+
+#gallery-row-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 960px;
+    margin: 50px auto
+}
+
+.gallery-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery-image-holder {
+    width: 480px;
+    height: 300px;
+    outline: 3px solid var(--detail-color);
+    transition: transform 0.5s;
+}
+
+.gallery-image-holder:hover {
+    transform: scale(1.1);
+}
+
+.square-image-holder {
+    width: 300px;
+}
+
+.gallery-image-holder img {
+    width: 100%;
+    height: 100%;
 }
