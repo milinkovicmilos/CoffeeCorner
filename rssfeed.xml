@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Coffee Corner obaveštenja</title>
+        <link>https://milinkovicmilos.github.io/CoffeeCorner/</link>
+        <description>Kanal za obaveštenja</description>
+        <item>
+            <title>Promena cena</title>
+            <link>https://milinkovicmilos.github.io/CoffeeCorner/cenovnik.html</link>
+            <description>Pogledajte promene u našem cenovniku</description>
+        </item>
+    </channel>
+
+</rss>
