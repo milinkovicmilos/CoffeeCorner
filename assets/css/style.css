@@ -25,6 +25,9 @@ a {
     width: 75%;
     margin: 0px auto;
 }
+#copyright-text {
+    font-size: 12px;
+}
 
 @keyframes showup {
     0% {transform: scale(0);}
